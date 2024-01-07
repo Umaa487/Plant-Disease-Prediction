@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction of Leaf Disease</title>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+<div id="google_translate_element"></div>
+<a href="main_page.html"><h2>HOME<h2></a>
+
+<center>
+    <h1>Prediction of Leaf Disease</h1>
+    <form action="https://formspree.io/f/maygvwea" method="POST">
+         <style>
+    .button
+    {
+      background-color: #e7e7e7;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 5px 5px;
+      cursor: pointer;
+    }
+        body {
+            background-image: url("https://www.sgs.com/-/media/sgscorp/images/temporary/leafy-veggies.cdn.en.1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size:25px;
+            
+        }
+
+    .button:hover {
+      background-color: #45a049;
+      }
+    
+    .feedback {
+      resize: none;
+      bottom:20px
+    }
+
+    .resizedTextbox
+    {
+    width: 300px;
+    padding-top:10px;
+    height: 20px;
+    }
+
+    .droptextbox
+    {
+    width: 200px;
+    height: 30px;
+    }
+
+        
+    </style>
+<body>
+        <label for="name">Name:</label>
+        <input type="text" class="resizedTextbox" id="name" name="name" required oninvalid="this.setCustomValidity('Please enter your name')" required><br><br>
+        <label for="email">Email:</label>
+        <input type="text" class="resizedTextbox" id="email" name="email" required oninvalid="this.setCustomValidity('Please enter a valid email address')" required><br><br>
+        <label for="disease">Which leaf disease prediction did you use?</label>
+        <select class="droptextbox" id="disease" name="disease">
+            <option value="none">Select an option</option>
+            <option value="disease1">Tomato Bacterial spot</option>
+            <option value="disease2">Tomato Early blight</option>
+            <option value="disease3">Tomato healthy</option>
+            <option value="disease4">Tomato late blight</option>
+        </select><br><br>
+        <label for="rating">How would you rate the accuracy of the prediction?</label>
+        <input type="radio" id="excellent" name="rating" value="excellent">
+        <label for="excellent">Excellent</label>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="fair" name="rating" value="fair">
+        <label for "fair">Fair</label>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label><br>
+        <label for="feedback">Feedback:</label>
+        <textarea class="feedback" id="feedback" name="feedback" rows="5" cols="50"></textarea><br><br>
+        <input type="submit" class="button" value="Submit">
+    </form>
+
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,fr,es,te,hi', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+   }
+   
+   (function() {
+     var googleTranslateScript = document.createElement('script');
+     googleTranslateScript.type = 'text/javascript';
+     googleTranslateScript.async = true;
+     googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+     var firstScript = document.getElementsByTagName('script')[0];
+     firstScript.parentNode.insertBefore(googleTranslateScript, firstScript);
+   })();
+</script>
+
+</body>
+</html>
