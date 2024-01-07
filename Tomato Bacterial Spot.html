@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    
+    <title>TOMATO LEAF DISEASE PREDICTION</title>
+<link rel="stylesheet" type="text/css" href="style2 (1).css" />
+  <style>
+      * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+      body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+     .circle-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .circle-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Style for the chatbot icon */
+    #chatbot-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    
+    /* Close button styling */
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+        
+    .curved-box-container {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0; /* Position the container at the extreme right */
+      width: 60%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .curved-box {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0; /* Position the box at the right side of the container */
+      width: 50%;
+      height: 100%;
+      border-radius: 50% 0 0 50% / 50% 0 0 50%; /* Flipped horizontal border radius */
+      overflow: hidden;
+    }
+    
+    .curved-box img {
+      position: absolute;
+      top: 0;
+      left: 50%; /* Move the image to the left side of the box */
+      transform: translateX(-50%); /* Center the image horizontally */
+      width: 200%; /* Double the width to cover the curved area */
+      height: 100%;
+      object-fit: cover;
+      opacity:0.2;
+      object-position: center;
+    }
+        
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+/* Style for the voice assistant button */
+    #voice-assistant-button {
+      background-color: #0074cc; /* Set your desired background color */
+      color: #fff; /* Text color */
+      padding: 10px 20px; /* Padding to adjust the button size */
+      border: none;
+      cursor: pointer;
+      border-radius: 5px; /* Rounded corners */
+    }
+
+    #voice-assistant-button:hover {
+      background-color: orange; /* Change color on hover */
+    }
+    
+     
+
+#img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+  opacity: 0.5;
+
+}
+
+#img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #F0E68C; /* set the background color to light semi-transparent green */
+}
+#img::after { /* create another pseudo-element */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-color: #F0E68C; /* add a white color on top of the image */
+  mix-blend-mode: difference; /* set the blend mode to overlay */
+  border-top-right-radius: 50% 100%; /* add a curved shape to the right side */
+}
+.block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+}
+.pic{
+  background: pink;
+  width: 50%;
+  height:auto;
+  margin:0px 15px;
+  padding:20px;
+}
+.contain{
+           background: transparant;
+           width:50%;
+           height: auto;
+           display: flex;
+           flex-direction: column;
+           justify-content:space-between;
+           align-items: center;
+           text-align: justify;
+           margin:0px 20px;
+           padding:20px;
+}
+
+		
+    </style>
+</head>
+<body style="background-color:powderblue;">
+<div id="google_translate_element"></div>
+<body ><div class="curved-box-container">
+
+    <div class="curved-box">
+      <img src="https://media.istockphoto.com/id/183846366/photo/robotic-holding-plant.jpg?s=612x612&w=is&k=20&c=qc8NG765n59pxIdEi-USSaVguoN_Ex2X7N5Tj24VZMY=" alt="Curved Box Image">
+    </div>
+  </div>
+
+
+
+    <div>
+                    <h1 style="font-family:Algerian; color:rgb(0,100,0);text-shadow: 2px 2px 2px "
+                        class="text-center">
+                        TOMATO BACTERIAL SPOT DISEASE </h1>
+                </div>
+   <br>
+   <br>
+  <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="C:\Users\Dell\Downloads\1.JPG" alt="User Image" style="width:400px;height:400px;">
+                    
+
+                </span>
+            </div>
+
+  
+   
+
+    <div class="contain">
+        
+  
+					
+					<h4 style="font-family:Comic Sans MS;font-size:30px;color:rgb(255, 0, 0); text-align: center;"> Treatment :</h4>
+                    <h6 style="font-family:Bradley Hand ITC;font-size:20px;color:rgb(199,21,133)"><b>
+
+
+                        
+                        <ul type="disc">
+<li>Copper  fungicides are the most commonly recommended treatment for bacterial leaf spot. </li>
+<li>Use copper fungicide as a preventive measure after you’ve planted your seeds but before you’ve moved the plants into their permanent homes. <li>
+<li>You can use copper fungicide spray before or after a rain, but don’t treat with copper fungicide while it is raining.</li>
+<li> If you’re seeing signs of bacterial leaf spot, spray with copper fungicide for a seven- to 10-day period, then spray again for one week after plants are moved into the field. <li>
+						<li>Perform maintenance treatments every 10 days in dry weather and every five to seven days in rainy weather.</li></ul></br></br>
+                        
+                    </b></h6>
+                    </div>
+                    </div></div></div>
+                <!-- Chatbot icon -->
+    <div id="chatbot-icon" onclick="toggleChatWindow()">
+<div class="circle-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0MAgHbcgbPeDWYpdLjuskYlBpKRttl3l-Ww&usqp=CAU" alt="logo"></div>
+   </div>
+<div id="chat-window">
+      <div class="main-title">
+        FARM ASSISTANT
+<span class="close-button" onclick="closeChatWindow()">&#10006;</span>
+      </div>
+      <div id="chat-messages"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          autocomplete="off"
+          placeholder="Type your message here"
+          required
+        />
+        <button type="submit">Send <i class="fas fa-paper-plane"></i></button>
+      <button id="voice-assistant-button" onclick="startVoiceAssistant()">🎙️</button>
+      </form>
+    </div>
+ </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+
+<script type="text/javascript">
+// app.js
+const form = document.getElementById("chat-form");
+const input = document.getElementById("chat-input");
+const messages = document.getElementById("chat-messages");
+const apiKey = "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"; // Replace with your API key
+
+const preText = "I am your personal informational guide..."; // Shorten if needed
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const message = input.value;
+  input.value = "";
+
+  messages.innerHTML += `<div class="message user-message">
+    <img src="./icons/user.png" alt="user icon"> <span>${message}</span>
+  </div>`;
+
+  try {
+    const response = await axios.post(
+      "https://api.openai.com/v1/completions",
+      {
+        prompt: preText + message,
+        model: "text-davinci-003",
+        temperature: 0.7, // Adjust as needed
+        max_tokens: 50, // Adjust as needed
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    
+    const chatbotResponse = response.data.choices[0].text;
+
+    messages.innerHTML += `<div class="message bot-message">
+      <img src="./icons/chatbot.png" alt="bot icon"> <span>${chatbotResponse}</span>
+    </div>`;
+  } catch (error) {
+    console.error("Error sending request to OpenAI API:", error);
+  }
+});
+
+  // Function to toggle the chat window visibility
+  function toggleChatWindow() {
+    const chatWindow = document.getElementById('chat-window');
+    chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Function to close the chat window
+  function closeChatWindow() {
+    const chatWindow = document.getElementById('chat-window');
+    chatWindow.style.display = 'none';
+  }
+
+    let isListening = false;
+    let recognition;
+
+    function toggleVoiceAssistant() {
+      if (!isListening) {
+        // Start listening
+        recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = 'en-US';
+        recognition.onresult = function(event) {
+          const transcript = event.results[0][0].transcript;
+          // Handle the transcript (e.g., send it to the chatbot and display the response)
+          handleVoiceInput(transcript);
+        }
+        recognition.start();
+        isListening = true;
+      } else {
+        // Stop listening
+        recognition.stop();
+        isListening = false;
+      }
+    }
+
+    function handleVoiceInput(transcript) {
+      console.log('You said: ' + transcript);
+
+      // Example: Send the transcript to the chatbot and display the response
+      const chatWindow = document.getElementById('chat-window');
+      chatWindow.innerHTML += '<div>User: ' + transcript + '</div>';
+      
+      // Here, you can add logic to send the user's input to your chatbot and receive a response.
+      // For simplicity, we're just displaying the user's input for demonstration purposes.
+      
+      // You can also use the Web Speech Synthesis API to respond with synthesized speech.
+      const synth = window.speechSynthesis;
+      const response = new SpeechSynthesisUtterance('Hello, you said: ' + transcript);
+      synth.speak(response);
+    }
+
+  
+</script>
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,fr,es,te,hi', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+   }
+   
+   (function() {
+     var googleTranslateScript = document.createElement('script');
+     googleTranslateScript.type = 'text/javascript';
+     googleTranslateScript.async = true;
+     googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+     var firstScript = document.getElementsByTagName('script')[0];
+     firstScript.parentNode.insertBefore(googleTranslateScript, firstScript);
+   })();
+</script>
+
+</body>
+
+</html>
